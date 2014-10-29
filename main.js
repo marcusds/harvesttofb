@@ -18,7 +18,7 @@ function findCases() {
 			if (m != null)
 			{
 				oldtxt = m[1] + m[2] + m[3];
-				newtxt = '&nbsp;<a href="https://' + localStorage["fogbugz"] + '.fogbugz.com/f/cases/' + m[3] + '">' + m[1] + m[2] + m[3] + '</a>';
+				newtxt = '&nbsp;<a target="_blank" href="https://' + localStorage["fogbugz"] + '.fogbugz.com/f/cases/' + m[3] + '">' + m[1] + m[2] + m[3] + '</a>';
 				txt = txt.replace(oldtxt, newtxt);
 			}
 			
@@ -31,7 +31,7 @@ function findCases() {
 			if (m != null)
 			{
 				oldtxt = m[1]+m[2];
-				newtxt = '&nbsp;<a href="https://' + localStorage["fogbugz"] + '.fogbugz.com/f/cases/' + m[2] + '">' + m[1] + m[2] + '</a>';
+				newtxt = '&nbsp;<a target="_blank" href="https://' + localStorage["fogbugz"] + '.fogbugz.com/f/cases/' + m[2] + '">' + m[1] + m[2] + '</a>';
 				txt = txt.replace(oldtxt, newtxt);
 			}
 			
