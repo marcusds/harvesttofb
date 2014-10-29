@@ -1,0 +1,15 @@
+{
+  "name": "Harvest to FogBugz Cases",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Links Fogbugz cases in Harvest. Must be in format Case 1234 or #1234",
+  "icons": { "16": "16.png",
+           "48": "48.png",
+          "128": "128.png" },
+  "content_scripts": [
+     { "all_frames": true, "js": [ "jquery-2.1.1.min.js", "main.js" ], "matches": [ "https://*.harvestapp.com/*" ] }
+  ],
+  "permissions": [
+	"https://*.harvestapp.com/*"
+  ]
+}
